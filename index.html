@@ -1,0 +1,428 @@
+<!DOCTYPE html>
+<html>
+<head>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+<link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/css/bootstrap.min.css" integrity="sha384-Gn5384xqQ1aoWXA+058RXPxPg6fy4IWvTNh0E263XmFcJlSAwiGgFAW/dAiS6JXm" crossorigin="anonymous">
+<script>
+$(document).ready(function(){
+  $("#myInput").on("keyup", function() {
+    var value = $(this).val().toLowerCase();
+    $("#myTable tr").filter(function() {
+      $(this).toggle($(this).text().toLowerCase().indexOf(value) > -1)
+    });
+  });
+});
+</script>
+<style>
+table {
+  font-family: arial, sans-serif;
+  border-collapse: collapse;
+  width: 100%;
+}
+
+td, th {
+  border: 1px solid #dddddd;
+  text-align: left;
+  padding: 8px;
+  text-align: center;
+}
+
+input#myInput {
+    margin-left: 15px;
+    border: 5px solid magenta;
+    border-radius:5px;
+}
+.student{
+  color: rgba(151, 51, 11, 0.918);
+  text-align: center;
+  text-decoration: underline;
+  text-decoration-color: maroon;
+}
+tr:hover{
+  background-color: wheat;
+  box-shadow: 2px 2px 12px rgba(0,0,0,1.2);
+  transform: scale(1.02);
+}
+</style>
+</head>
+<body>
+
+<h1 class="student">Student's Data Table</h1>
+<p>All data are included under the table for your necessary:</p>  
+<input id="myInput" type="text" placeholder="Search..">
+<br><br>
+ 
+<div class="contianer " >
+<table>
+  <thead class="bg-success">
+  <tr>
+    <th>Name</th>
+    <th>Class</th>
+    <th>Roll</th>
+    <th>Marks</th>
+    <th>Position</th>
+    <th>Grade</th>
+  </tr>
+  </thead>
+  <tbody id="myTable">
+  <tr>
+    <td>Helal</td>
+    <td>Nine</td>
+    <td>5</td>
+    <td>85</td>
+    <td>2nd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Kamal</td>
+    <td>six</td>
+    <td>1</td>
+    <td>85</td>
+    <td>1st</td>
+    <td>A+</td>
+  </tr> 
+  <tr>
+    <td>Rohman</td>
+    <td>seven</td>
+    <td>2</td>
+    <td>82</td>
+    <td>2nd</td>
+    <td>A</td>
+  </tr> 
+  <tr>
+    <td>Mohshin</td>
+    <td>eight</td>
+    <td>10</td>
+    <td>88</td>
+    <td>3rd</td>
+    <td>A</td>
+  </tr> 
+  <tr>
+    <td>Robin</td>
+    <td>five</td>
+    <td>5</td>
+    <td>85</td>
+    <td>2nd</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Lalon</td>
+    <td>five</td>
+    <td>11</td>
+    <td>75</td>
+    <td>1st</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Shahria</td>
+    <td>ten</td>
+    <td>3</td>
+    <td>90</td>
+    <td>1st</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Alpona Akter</td>
+    <td>four</td>
+    <td>4</td>
+    <td>77</td>
+    <td>2nd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Gillu Rohman</td>
+    <td>eight</td>
+    <td>8</td>
+    <td>75</td>
+    <td>2nd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Tanvir</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Biblop</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Conica</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Dulal</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Ebadot</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Foysal</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Imran</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Jesmin</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Orpita</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Poly Akter</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Vikrom</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Wiasim</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Tanha</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  
+  <tr>
+    <td>Helal</td>
+    <td>Nine</td>
+    <td>5</td>
+    <td>85</td>
+    <td>2nd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Kamal</td>
+    <td>six</td>
+    <td>1</td>
+    <td>85</td>
+    <td>1st</td>
+    <td>A+</td>
+  </tr> 
+  <tr>
+    <td>Rohman</td>
+    <td>seven</td>
+    <td>2</td>
+    <td>82</td>
+    <td>2nd</td>
+    <td>A</td>
+  </tr> 
+  <tr>
+    <td>Momin</td>
+    <td>eight</td>
+    <td>10</td>
+    <td>88</td>
+    <td>3rd</td>
+    <td>A</td>
+  </tr> 
+  <tr>
+    <td>Robin</td>
+    <td>five</td>
+    <td>5</td>
+    <td>85</td>
+    <td>2nd</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Lalon</td>
+    <td>five</td>
+    <td>11</td>
+    <td>75</td>
+    <td>1st</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Shahria</td>
+    <td>ten</td>
+    <td>3</td>
+    <td>90</td>
+    <td>1st</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Alpona Akter</td>
+    <td>four</td>
+    <td>4</td>
+    <td>77</td>
+    <td>2nd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Gillu Rohman</td>
+    <td>eight</td>
+    <td>8</td>
+    <td>75</td>
+    <td>2nd</td>
+    <td>A</td>
+  </tr>
+  <tr>
+    <td>Tanvir</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Biblop</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Conica</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Dulal</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Ebadot</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Foysal</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Imran</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Jesmin</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Orpita</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Poly Akter</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Vikrom</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Wiasim</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  <tr>
+    <td>Tanha</td>
+    <td>Six</td>
+    <td>6</td>
+    <td>86</td>
+    <td>4th</td>
+    <td>B</td>
+  </tr>
+  </tbody>
+</table>
+</div>
+<script src="https://code.jquery.com/jquery-3.2.1.slim.min.js" integrity="sha384-KJ3o2DKtIkvYIK3UENzmM7KCkRr/rE9/Qpg6aAZGJwFDMVNA/GpGFF93hXpG5KkN" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.12.9/dist/umd/popper.min.js" integrity="sha384-ApNbgh9B+Y1QKtv3Rn7W3mgPxhU9K/ScQsAP7hUibX39j7fakFPskvXusvfa0b4Q" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/bootstrap@4.0.0/dist/js/bootstrap.min.js" integrity="sha384-JZR6Spejh4U02d8jOt6vLEHfe/JQGiRRSQQxSfFWpi1MquVdAyjUar5+76PVCmYl" crossorigin="anonymous"></script>
+</body>
+</html>
